@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Playfair Display', serif */
+}
+
+/* CSS Variable */
+:root {
+    --navbar-height: 59px;
+
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* important */
+    position: relative;
+
+    /* justify-content: center; */
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* navigation bar: logo and image */
+#logo {
+    margin: 10px 80px;
+
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+    margin: 1px 1px;
+
+}
+
+/* list styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    background: url(/image/flowers-6632403_960_720.webp) no-repeat center center/cover;
+    content: "";
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* service Section */
+#services {
+    display: flex;
+    flex-direction: row;
+    margin: 34 px;
+}
+
+#services .box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid brown;
+    margin: 25px;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+
+}
+
+#Services .box p {
+    font-size: 10px;
+}
+
+/* client section */
+
+#client-section {
+    position: relative;
+  
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(/image/computer-2982270_960_720.webp) no-repeat center center/cover;
+    width: 100%;
+    height: 247px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.clients-items {
+    padding: 34px;
+}
+
+#clients img {
+    height: 100px;
+    width: 100px;
+}
+
+
+/* contact section */
+
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;;
+    opacity: 0.7;
+    background: url(/image/office-865091_960_720.webp) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+#contact-box input{
+    width: 100% ;
+    padding: 0.5rem;
+
+
+}
+footer{
+    background:black;
+    color: white;
+    padding: 12px;
+
+}
+
+
+
+
+/* utility class */
+.h-primary {
+    /* font-family: 'Playfair Display', serif */
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    /* font-family: 'Playfair Display', serif */
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 17px;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(154, 150, 45, 0.427);
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up/Log-in</title>
+    <style>
+        *body{
+            padding: 0px;
+            margin: 0px;
+        }
+        nav{
+            display: flex;
+            background-color: rgb(49, 45, 45);
+            height: 68px;
+        
+        }
+        #logo{
+            margin: 4px 24px ;
+            /* padding: 0px 0px; */
+        }
+        #logo img{
+            width: 60px;
+            height: 60px;
+        }
+        nav ul{
+            display: flex;
+            padding: 0px 34px;
+            margin: 0px 34px;
+           
+            /* flex-direction: column; */
+        }
+        nav ul li{
+            padding: 26px;
+            margin: 0px 3px;
+            list-style: none;
+        }
+        nav ul li a{
+            
+            color: white;
+            text-decoration: none;
+            margin: 0px 12px;
+            font-size: 18px;
+        }
+        nav ul li a:hover{
+            background-color: white;
+            /* border: 4px solid white; */
+            border-radius: 20px;
+            color: black;
+        }
+        nav ul div{
+            display: flex;
+            margin-left: 109px;
+            padding: 3px 0px;
+
+        }
+        nav div input{
+            flex: 1;
+            text-align: center;
+            border: none; 
+            outline: none; 
+            width: 330px;
+            height: 27px;
+            margin: 17px 1px;
+            padding: 2px 33px;
+        }
+        nav label img{
+            margin: 0px 10px;
+            padding: 14px 10px;
+            width:38px;
+            height:38px;
+
+        }
+        nav div button{
+            /* border-radius: 10px; */
+            margin: 16px 0px;
+            background-color: orange;
+            padding: 0px 0px;
+            cursor: pointer;
+            width: 100px;
+            height: 33px;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/logo4.png" alt="logo image">
+        </div>
+        <div class="container">
+            <ul class="item">
+                <li class="item-number"><a href="#">Home</a></li>
+                <li class="item-number"><a href="#">About Us</a></li>
+                <li class="item-number"><a href="#">Services</a></li>
+                <li class="item-number"><a href="#">Contact-Us</a></li>
+                <div>
+                    <label for="search"><img src="/logo4.png"  alt=""></label>
+                    <input type="text" name="search id="search" placeholder="What are You looking For?">
+                    <button type="submit">search</button>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+</html>

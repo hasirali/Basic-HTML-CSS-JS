@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="validate.js"></script>
+</head>
+<body>
+    <form name="myform" onsubmit="return(validate());">
+    <table cecllspacing="2" cellpadding="2" border="1px">
+        <tr>
+            <td align="right">name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td align="right">email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td align="right">zipcode</td>
+            <td><input type="text" name="zip"></td>
+        </tr>
+        <tr>
+            <td align="right">country</td>
+            <td>
+                <select name="country">
+                    <option value="-1"selected>[choose your country]</option>
+                    <option value="1">usa</option>
+                    <option value="2">india</option>
+                    <option value="3">china</option>
+                </select>
+                </td>
+        </tr>
+        <tr>
+           <td colspan = 2 align="center"><input type="submit" value="submit"></td>
+        </tr>
+    </table>
+
+    </form>
+    
+</body>
+</html>

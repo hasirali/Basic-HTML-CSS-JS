@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: aliceblue#222;
+
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: aliceblue#222;
+
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-size: 700px;
+    color: #222;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0px;
+}
+
+/* header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(171, 198, 198);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li {
+    position: relative;
+    list-style: none;
+    padding: 0px 20px;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: aliceblue;
+    /* background-color:darkcyan; */
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#navbar a.active {
+    color: white;
+
+}
+
+/* for under line */
+#navbar a:hover::after,
+#navbar a.active::after {   
+    /* color: white; */
+    content: "";
+    position: absolute;
+    background: white;
+    width: 30%;
+    height: 2px;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#content{
+    background: url(/image/Delivery-PNG-Image.png);
+    width: 90vh;
+    height: 100%;
+    background-position: top 25% right 0%;
+}
